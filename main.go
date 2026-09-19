@@ -9,11 +9,11 @@ import (
 
 func init() {
     // Register an HTTP function with the Functions Framework
-    functions.HTTP("MyHTTPFunction", myHTTPFunction)
+    functions.HTTP("MyHTTPFunction", HTTPFunction)
 }
 
 // Function myHTTPFunction is an HTTP handler
-func myHTTPFunction(w http.ResponseWriter, r *http.Request) {
+func HTTPFunction(w http.ResponseWriter, r *http.Request) {
     // Your code here
 
     // Send an HTTP response
